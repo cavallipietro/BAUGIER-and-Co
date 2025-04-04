@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijouterie & Horlogerie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('hero-image.jpg') no-repeat center/cover;
+            color: white;
+        }
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background: #222;
+            padding: 20px 0;
+        }
+        .banner-container {
+            display: flex;
+            width: 300%;
+            animation: slide 10s infinite;
+        }
+        .banner img {
+            width: 33.33%;
+            flex-shrink: 0;
+            border-radius: 10px;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-33.33%); }
+            66% { transform: translateX(-66.66%); }
+            100% { transform: translateX(0); }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .contact {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ma Bijouterie & Horlogerie</h1>
+    </header>
+    <section class="banner">
+        <div class="banner-container">
+            <img src="distinction1.jpg" alt="Distinction 1">
+            <img src="nouveau-modele1.jpg" alt="Nouveau Modèle 1">
+            <img src="distinction2.jpg" alt="Distinction 2">
+        </div>
+    </section>
+    <section class="hero">
+        <h2>Découvrez nos créations uniques</h2>
+        <p>Des bijoux et montres d'exception</p>
+    </section>
+    <section class="gallery">
+        <img src="bijou1.jpg" alt="Bijou 1">
+        <img src="bijou2.jpg" alt="Bijou 2">
+        <img src="montre1.jpg" alt="Montre 1">
+    </section>
+    <section class="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@bijouterie.com</p>
+        <p>Téléphone: 01 23 45 67 89</p>
+    </section>
+</body>
+</html>
